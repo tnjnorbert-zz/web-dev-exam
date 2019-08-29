@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Web Developer</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='assets/style.css'>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+            <h1 style="font-size:25px;">Numbers</h1>
+
+                <form action="" method="post" autocomplete="off">
+                <div class="component">
+                <label for="num1" class="classlabel"> Number One</label>
+                <input class="form-control" id="num1" placeholder="Enter Number one" type="text" autocomplete="off">
+                </div>
+                <div class="component">
+                <label for="num1" class="classlabel"> Number Two</label>
+                <input class="form-control" id="num2" placeholder="Enter Number two" type="text" autocomplete="off">
+                </div>
+                <div class="component">
+                <label for="num1" class="classlabel"> Operation</label>
+                <select name="" id="symbol" style="width:90%;height:20px;" class="form-control-select">
+                    <option value="+">Add</option>
+                    <option value="-">Subtract</option>
+                    <option value="*">Multiply</option>
+                    <option value="/">Devide</option>
+                </select>
+                </div>
+
+                <div class="component">
+                <input type="submit" id="submit_button" class="btn" value="POST">
+                </div>
+                </form>
+            </div>
+            <div class="col-8">
+                <div id="results">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Number 1</th>
+                                <th>Number 2</th>
+                                <th>Response</th>
+                                <th>Expected</th>
+                                <th>Passed</th>
+                                <th>Remove</th>
+                            </tr>
+                        </thead>
+                        <tbody id="kkk">
+                            <tr>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="assets/jquery.js"></script>
+<script src="assets/exam.js"></script>
+</body>
+</html>
