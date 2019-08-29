@@ -79,13 +79,16 @@ function getRandomInt() {
       return (Math.random() * (0.00 - 1.00) + 1.00).toFixed(4)
   }
 
-
-  function test(then, expected) {
-    results.total++;
-    var result = prettyDate("2008/01/28 22:25:00", then);
-    if (result !== expected) {
-      results.bad++;
-      console.log("Expected " + expected +
-        ", but was " + result);
-    }
-  }
+//   function test(expression, response) {
+//     var ans=eval(expression);
+//         console.log("expected response"+ans);
+//         if (ans == response) {
+//             console("API Response : ",ans);
+//         }
+   
+//   }
+//   test("4*2",6);
+QUnit.test( "TestRandom", function( assert ) {
+    var result = genCeil(3.56);
+    assert.equal( result, "3", "ceiling should be 3." );
+ });
